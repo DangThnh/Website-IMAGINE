@@ -1,0 +1,217 @@
+2025-03-12 21:21:09.041  INFO 34696 --- [main] com.websocket.chat.ChatApplication       : Starting ChatApplication using Java 23.0.1 on DESKTOP-IUIAJO3 with PID 34696 (D:\JavaWebSocketReact-master\JavaWebSocketReact-master\java-server\target\classes started by sktkt in D:\JavaWebSocketReact-master\JavaWebSocketReact-master\java-server)
+2025-03-12 21:21:09.044  INFO 34696 --- [main] com.websocket.chat.ChatApplication       : No active profile set, falling back to default profiles: default
+2025-03-12 21:21:09.761  INFO 34696 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2025-03-12 21:21:09.771  INFO 34696 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-12 21:21:09.771  INFO 34696 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2025-03-12 21:21:09.829  INFO 34696 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-12 21:21:09.830  INFO 34696 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 735 ms
+2025-03-12 21:21:09.883 DEBUG 34696 --- [main] o.springframework.web.filter.CorsFilter  : Filter 'corsFilter' configured for use
+2025-03-12 21:21:09.968 DEBUG 34696 --- [main] o.s.w.s.s.s.WebSocketHandlerMapping      : Patterns [/ws/**] in 'stompWebSocketHandlerMapping'
+2025-03-12 21:21:10.041 DEBUG 34696 --- [main] .WebSocketAnnotationMethodMessageHandler : 
+	c.w.c.c.ChatController:
+	{[MESSAGE],[/chat]}: sendMessage(ChatMessage)
+2025-03-12 21:21:10.046 DEBUG 34696 --- [main] .WebSocketAnnotationMethodMessageHandler : 
+	o.s.b.a.w.s.e.BasicErrorController:
+	
+2025-03-12 21:21:10.096 DEBUG 34696 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-03-12 21:21:10.136 DEBUG 34696 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 mappings in 'requestMappingHandlerMapping'
+2025-03-12 21:21:10.159 DEBUG 34696 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-03-12 21:21:10.165 DEBUG 34696 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-03-12 21:21:10.238  INFO 34696 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2025-03-12 21:21:10.240 DEBUG 34696 --- [main] org.springframework.web.SimpLogging      : clientOutboundChannel added SubProtocolWebSocketHandler[StompSubProtocolHandler[v10.stomp, v11.stomp, v12.stomp]]
+2025-03-12 21:21:10.240 DEBUG 34696 --- [main] org.springframework.web.SimpLogging      : clientInboundChannel added WebSocketAnnotationMethodMessageHandler[prefixes=[/app/]]
+2025-03-12 21:21:10.240  INFO 34696 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2025-03-12 21:21:10.240 DEBUG 34696 --- [main] org.springframework.web.SimpLogging      : clientInboundChannel added SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@27fe9713]
+2025-03-12 21:21:10.240 DEBUG 34696 --- [main] org.springframework.web.SimpLogging      : brokerChannel added SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@27fe9713]
+2025-03-12 21:21:10.241  INFO 34696 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@27fe9713]]
+2025-03-12 21:21:10.241  INFO 34696 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2025-03-12 21:21:10.241 DEBUG 34696 --- [main] org.springframework.web.SimpLogging      : clientInboundChannel added UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2025-03-12 21:21:10.241 DEBUG 34696 --- [main] org.springframework.web.SimpLogging      : brokerChannel added UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2025-03-12 21:21:10.248  INFO 34696 --- [main] com.websocket.chat.ChatApplication       : Started ChatApplication in 1.541 seconds (JVM running for 1.857)
+2025-03-12 21:21:28.103  INFO 34696 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-12 21:21:28.103  INFO 34696 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-12 21:21:28.103 DEBUG 34696 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-03-12 21:21:28.104 DEBUG 34696 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-03-12 21:21:28.104 DEBUG 34696 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-03-12 21:21:28.104 DEBUG 34696 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@57c4b3d2
+2025-03-12 21:21:28.105 DEBUG 34696 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@5a6a92cd
+2025-03-12 21:21:28.105 DEBUG 34696 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-03-12 21:21:28.105  INFO 34696 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-03-12 21:21:28.126 DEBUG 34696 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/ws/info?t=1741789288013", parameters={masked}
+2025-03-12 21:21:28.132 DEBUG 34696 --- [http-nio-8080-exec-1] o.s.w.s.s.s.WebSocketHandlerMapping      : Mapped to org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler@e8e0dec
+2025-03-12 21:21:28.135 DEBUG 34696 --- [http-nio-8080-exec-1] o.s.w.s.s.t.h.DefaultSockJsService       : Processing transport request: GET http://localhost:8080/ws/info?t=1741789288013
+2025-03-12 21:21:28.139 DEBUG 34696 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-12 21:21:28.245 DEBUG 34696 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/ws/403/zhya423z/websocket", parameters={}
+2025-03-12 21:21:28.246 DEBUG 34696 --- [http-nio-8080-exec-2] o.s.w.s.s.s.WebSocketHandlerMapping      : Mapped to org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler@e8e0dec
+2025-03-12 21:21:28.247 DEBUG 34696 --- [http-nio-8080-exec-2] o.s.w.s.s.t.h.DefaultSockJsService       : Processing transport request: GET http://localhost:8080/ws/403/zhya423z/websocket
+2025-03-12 21:21:28.273 DEBUG 34696 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 101 SWITCHING_PROTOCOLS
+2025-03-12 21:21:28.289 DEBUG 34696 --- [http-nio-8080-exec-2] s.w.s.h.LoggingWebSocketHandlerDecorator : New WebSocketServerSockJsSession[id=zhya423z]
+2025-03-12 21:21:28.512 DEBUG 34696 --- [clientInboundChannel-2] org.springframework.web.SimpLogging      : Processing CONNECT session=zhya423z
+2025-03-12 21:21:28.519 DEBUG 34696 --- [clientInboundChannel-5] org.springframework.web.SimpLogging      : Processing SUBSCRIBE /topic/messages id=sub-0 session=zhya423z
+2025-03-12 21:21:35.010 DEBUG 34696 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/ws/info?t=1741789294998", parameters={masked}
+2025-03-12 21:21:35.010 DEBUG 34696 --- [http-nio-8080-exec-5] o.s.w.s.s.s.WebSocketHandlerMapping      : Mapped to org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler@e8e0dec
+2025-03-12 21:21:35.010 DEBUG 34696 --- [http-nio-8080-exec-5] o.s.w.s.s.t.h.DefaultSockJsService       : Processing transport request: GET http://localhost:8080/ws/info?t=1741789294998
+2025-03-12 21:21:35.011 DEBUG 34696 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-12 21:21:35.034 DEBUG 34696 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/ws/882/3uzmhhcc/websocket", parameters={}
+2025-03-12 21:21:35.035 DEBUG 34696 --- [http-nio-8080-exec-6] o.s.w.s.s.s.WebSocketHandlerMapping      : Mapped to org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler@e8e0dec
+2025-03-12 21:21:35.035 DEBUG 34696 --- [http-nio-8080-exec-6] o.s.w.s.s.t.h.DefaultSockJsService       : Processing transport request: GET http://localhost:8080/ws/882/3uzmhhcc/websocket
+2025-03-12 21:21:35.037 DEBUG 34696 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 101 SWITCHING_PROTOCOLS
+2025-03-12 21:21:35.038 DEBUG 34696 --- [http-nio-8080-exec-6] s.w.s.h.LoggingWebSocketHandlerDecorator : New WebSocketServerSockJsSession[id=3uzmhhcc]
+2025-03-12 21:21:35.077 DEBUG 34696 --- [clientInboundChannel-8] org.springframework.web.SimpLogging      : Processing CONNECT session=3uzmhhcc
+2025-03-12 21:21:35.081 DEBUG 34696 --- [clientInboundChannel-11] org.springframework.web.SimpLogging      : Processing SUBSCRIBE /topic/messages id=sub-0 session=3uzmhhcc
+2025-03-12 21:21:42.171 DEBUG 34696 --- [clientInboundChannel-13] .WebSocketAnnotationMethodMessageHandler : Searching methods to handle SEND /app/chat session=3uzmhhcc, lookupDestination='/chat'
+2025-03-12 21:21:42.172 DEBUG 34696 --- [clientInboundChannel-13] .WebSocketAnnotationMethodMessageHandler : Invoking ChatController#sendMessage[1 args]
+2025-03-12 21:21:42.221 DEBUG 34696 --- [clientInboundChannel-13] org.springframework.web.SimpLogging      : Processing MESSAGE destination=/topic/messages session=3uzmhhcc payload={"nickname":"Tuan","content":"abcd","timestamp":"2025-03-12T14:21:42.205+00:00"}...(truncated)
+2025-03-12 21:21:42.222 DEBUG 34696 --- [clientInboundChannel-13] org.springframework.web.SimpLogging      : Broadcasting to 2 sessions.
+2025-03-12 21:21:49.294 DEBUG 34696 --- [clientInboundChannel-16] .WebSocketAnnotationMethodMessageHandler : Searching methods to handle SEND /app/chat session=zhya423z, lookupDestination='/chat'
+2025-03-12 21:21:49.294 DEBUG 34696 --- [clientInboundChannel-16] .WebSocketAnnotationMethodMessageHandler : Invoking ChatController#sendMessage[1 args]
+2025-03-12 21:21:49.295 DEBUG 34696 --- [clientInboundChannel-16] org.springframework.web.SimpLogging      : Processing MESSAGE destination=/topic/messages session=zhya423z payload={"nickname":"tuanxxx","content":"1234","timestamp":"2025-03-12T14:21:49.294+00:0...(truncated)
+2025-03-12 21:21:49.295 DEBUG 34696 --- [clientInboundChannel-16] org.springframework.web.SimpLogging      : Broadcasting to 2 sessions.
+2025-03-12 21:22:10.005  INFO 34696 --- [MessageBroker-8] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[2 current WS(2)-HttpStream(0)-HttpPoll(0), 2 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(2)-CONNECTED(2)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 18, active threads = 0, queued tasks = 0, completed tasks = 18], outboundChannel[pool size = 6, active threads = 0, queued tasks = 0, completed tasks = 6], sockJsScheduler[pool size = 12, active threads = 1, queued tasks = 3, completed tasks = 9]
+2025-03-12 21:23:32.279 DEBUG 34696 --- [SpringApplicationShutdownHook] org.springframework.web.SimpLogging      : clientOutboundChannel removed SubProtocolWebSocketHandler[StompSubProtocolHandler[v10.stomp, v11.stomp, v12.stomp]]
+2025-03-12 21:23:32.280 DEBUG 34696 --- [SpringApplicationShutdownHook] s.w.s.s.t.s.WebSocketServerSockJsSession : Closing SockJS session 3uzmhhcc with CloseStatus[code=1001, reason=null]
+2025-03-12 21:23:32.280 DEBUG 34696 --- [SpringApplicationShutdownHook] o.s.w.s.adapter.NativeWebSocketSession   : Closing StandardWebSocketSession[id=3448c543-6ed7-3c09-9ebd-ee12e7c920f6, uri=ws://localhost:8080/ws/882/3uzmhhcc/websocket]
+2025-03-12 21:23:32.280 DEBUG 34696 --- [SpringApplicationShutdownHook] s.w.s.h.LoggingWebSocketHandlerDecorator : WebSocketServerSockJsSession[id=3uzmhhcc] closed with CloseStatus[code=1001, reason=null]
+2025-03-12 21:23:32.281 DEBUG 34696 --- [SpringApplicationShutdownHook] o.s.w.s.m.SubProtocolWebSocketHandler    : Clearing session 3uzmhhcc
+2025-03-12 21:23:32.281 DEBUG 34696 --- [clientInboundChannel-20] org.springframework.web.SimpLogging      : Processing DISCONNECT session=3uzmhhcc
+2025-03-12 21:23:32.281 DEBUG 34696 --- [SpringApplicationShutdownHook] s.w.s.s.t.s.WebSocketServerSockJsSession : Closing SockJS session zhya423z with CloseStatus[code=1001, reason=null]
+2025-03-12 21:23:32.282 DEBUG 34696 --- [SpringApplicationShutdownHook] o.s.w.s.adapter.NativeWebSocketSession   : Closing StandardWebSocketSession[id=5d733d2b-9472-13ac-aa3c-360fe0c713cc, uri=ws://localhost:8080/ws/403/zhya423z/websocket]
+2025-03-12 21:23:32.282 DEBUG 34696 --- [SpringApplicationShutdownHook] s.w.s.h.LoggingWebSocketHandlerDecorator : WebSocketServerSockJsSession[id=zhya423z] closed with CloseStatus[code=1001, reason=null]
+2025-03-12 21:23:32.282 DEBUG 34696 --- [SpringApplicationShutdownHook] o.s.w.s.m.SubProtocolWebSocketHandler    : Clearing session zhya423z
+2025-03-12 21:23:32.282 DEBUG 34696 --- [clientInboundChannel-23] org.springframework.web.SimpLogging      : Processing DISCONNECT session=zhya423z
+2025-03-12 21:23:32.282 DEBUG 34696 --- [SpringApplicationShutdownHook] org.springframework.web.SimpLogging      : clientInboundChannel removed WebSocketAnnotationMethodMessageHandler[prefixes=[/app/]]
+2025-03-12 21:23:32.282  INFO 34696 --- [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopping...
+2025-03-12 21:23:32.283  INFO 34696 --- [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@27fe9713]]
+2025-03-12 21:23:32.283 DEBUG 34696 --- [SpringApplicationShutdownHook] org.springframework.web.SimpLogging      : clientInboundChannel removed SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@27fe9713]
+2025-03-12 21:23:32.283 DEBUG 34696 --- [SpringApplicationShutdownHook] org.springframework.web.SimpLogging      : brokerChannel removed SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@27fe9713]
+2025-03-12 21:23:32.283  INFO 34696 --- [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopped.
+2025-03-12 21:23:32.283 DEBUG 34696 --- [SpringApplicationShutdownHook] org.springframework.web.SimpLogging      : clientInboundChannel removed UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2025-03-12 21:23:32.283 DEBUG 34696 --- [SpringApplicationShutdownHook] org.springframework.web.SimpLogging      : brokerChannel removed UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2025-03-12 23:07:09.035  INFO 4080 --- [main] com.websocket.chat.ChatApplication       : Starting ChatApplication using Java 23.0.1 on DESKTOP-IUIAJO3 with PID 4080 (D:\JavaWebSocketReact-master\JavaWebSocketReact-master\java-server\target\classes started by sktkt in D:\JavaWebSocketReact-master\JavaWebSocketReact-master\java-server)
+2025-03-12 23:07:09.037  INFO 4080 --- [main] com.websocket.chat.ChatApplication       : No active profile set, falling back to default profiles: default
+2025-03-12 23:07:09.810  INFO 4080 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2025-03-12 23:07:09.822  INFO 4080 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-12 23:07:09.822  INFO 4080 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2025-03-12 23:07:09.891  INFO 4080 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-12 23:07:09.892  INFO 4080 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 805 ms
+2025-03-12 23:07:09.945 DEBUG 4080 --- [main] o.springframework.web.filter.CorsFilter  : Filter 'corsFilter' configured for use
+2025-03-12 23:07:10.037 DEBUG 4080 --- [main] o.s.w.s.s.s.WebSocketHandlerMapping      : Patterns [/ws/**] in 'stompWebSocketHandlerMapping'
+2025-03-12 23:07:10.113 DEBUG 4080 --- [main] .WebSocketAnnotationMethodMessageHandler : 
+	c.w.c.c.ChatController:
+	{[MESSAGE],[/chat]}: sendMessage(ChatMessage)
+2025-03-12 23:07:10.119 DEBUG 4080 --- [main] .WebSocketAnnotationMethodMessageHandler : 
+	o.s.b.a.w.s.e.BasicErrorController:
+	
+2025-03-12 23:07:10.182 DEBUG 4080 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-03-12 23:07:10.223 DEBUG 4080 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 mappings in 'requestMappingHandlerMapping'
+2025-03-12 23:07:10.247 DEBUG 4080 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-03-12 23:07:10.257 DEBUG 4080 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-03-12 23:07:10.343  INFO 4080 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2025-03-12 23:07:10.345 DEBUG 4080 --- [main] org.springframework.web.SimpLogging      : clientOutboundChannel added SubProtocolWebSocketHandler[StompSubProtocolHandler[v10.stomp, v11.stomp, v12.stomp]]
+2025-03-12 23:07:10.345 DEBUG 4080 --- [main] org.springframework.web.SimpLogging      : clientInboundChannel added WebSocketAnnotationMethodMessageHandler[prefixes=[/app/]]
+2025-03-12 23:07:10.346  INFO 4080 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2025-03-12 23:07:10.346 DEBUG 4080 --- [main] org.springframework.web.SimpLogging      : clientInboundChannel added SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@11c3ff67]
+2025-03-12 23:07:10.346 DEBUG 4080 --- [main] org.springframework.web.SimpLogging      : brokerChannel added SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@11c3ff67]
+2025-03-12 23:07:10.346  INFO 4080 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@11c3ff67]]
+2025-03-12 23:07:10.346  INFO 4080 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2025-03-12 23:07:10.346 DEBUG 4080 --- [main] org.springframework.web.SimpLogging      : clientInboundChannel added UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2025-03-12 23:07:10.346 DEBUG 4080 --- [main] org.springframework.web.SimpLogging      : brokerChannel added UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2025-03-12 23:07:10.353  INFO 4080 --- [main] com.websocket.chat.ChatApplication       : Started ChatApplication in 1.689 seconds (JVM running for 2.054)
+2025-03-12 23:07:14.336  INFO 4080 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-12 23:07:14.337  INFO 4080 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-12 23:07:14.337 DEBUG 4080 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-03-12 23:07:14.338 DEBUG 4080 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-03-12 23:07:14.338 DEBUG 4080 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-03-12 23:07:14.339 DEBUG 4080 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@4e0b17e0
+2025-03-12 23:07:14.340 DEBUG 4080 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@5ef07265
+2025-03-12 23:07:14.341 DEBUG 4080 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-03-12 23:07:14.341  INFO 4080 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2025-03-12 23:07:14.371 DEBUG 4080 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/ws/info?t=1741795634251", parameters={masked}
+2025-03-12 23:07:14.380 DEBUG 4080 --- [http-nio-8080-exec-1] o.s.w.s.s.s.WebSocketHandlerMapping      : Mapped to org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler@42714a7
+2025-03-12 23:07:14.384 DEBUG 4080 --- [http-nio-8080-exec-1] o.s.w.s.s.t.h.DefaultSockJsService       : Processing transport request: GET http://localhost:8080/ws/info?t=1741795634251
+2025-03-12 23:07:14.388 DEBUG 4080 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-12 23:07:14.479 DEBUG 4080 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/ws/496/gcfshnsk/websocket", parameters={}
+2025-03-12 23:07:14.480 DEBUG 4080 --- [http-nio-8080-exec-2] o.s.w.s.s.s.WebSocketHandlerMapping      : Mapped to org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler@42714a7
+2025-03-12 23:07:14.481 DEBUG 4080 --- [http-nio-8080-exec-2] o.s.w.s.s.t.h.DefaultSockJsService       : Processing transport request: GET http://localhost:8080/ws/496/gcfshnsk/websocket
+2025-03-12 23:07:14.506 DEBUG 4080 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 101 SWITCHING_PROTOCOLS
+2025-03-12 23:07:14.522 DEBUG 4080 --- [http-nio-8080-exec-2] s.w.s.h.LoggingWebSocketHandlerDecorator : New WebSocketServerSockJsSession[id=gcfshnsk]
+2025-03-12 23:07:14.678 DEBUG 4080 --- [clientInboundChannel-2] org.springframework.web.SimpLogging      : Processing CONNECT session=gcfshnsk
+2025-03-12 23:07:14.683 DEBUG 4080 --- [clientInboundChannel-5] org.springframework.web.SimpLogging      : Processing SUBSCRIBE /topic/messages id=sub-0 session=gcfshnsk
+2025-03-12 23:07:47.611 DEBUG 4080 --- [SpringApplicationShutdownHook] org.springframework.web.SimpLogging      : clientOutboundChannel removed SubProtocolWebSocketHandler[StompSubProtocolHandler[v10.stomp, v11.stomp, v12.stomp]]
+2025-03-12 23:07:47.612 DEBUG 4080 --- [SpringApplicationShutdownHook] s.w.s.s.t.s.WebSocketServerSockJsSession : Closing SockJS session gcfshnsk with CloseStatus[code=1001, reason=null]
+2025-03-12 23:07:47.612 DEBUG 4080 --- [SpringApplicationShutdownHook] o.s.w.s.adapter.NativeWebSocketSession   : Closing StandardWebSocketSession[id=5f3ff868-0c27-30f5-ccd6-59aaec3ad8a2, uri=ws://localhost:8080/ws/496/gcfshnsk/websocket]
+2025-03-12 23:07:47.612 DEBUG 4080 --- [SpringApplicationShutdownHook] s.w.s.h.LoggingWebSocketHandlerDecorator : WebSocketServerSockJsSession[id=gcfshnsk] closed with CloseStatus[code=1001, reason=null]
+2025-03-12 23:07:47.612 DEBUG 4080 --- [SpringApplicationShutdownHook] o.s.w.s.m.SubProtocolWebSocketHandler    : Clearing session gcfshnsk
+2025-03-12 23:07:47.613 DEBUG 4080 --- [clientInboundChannel-8] org.springframework.web.SimpLogging      : Processing DISCONNECT session=gcfshnsk
+2025-03-12 23:07:47.613 DEBUG 4080 --- [SpringApplicationShutdownHook] org.springframework.web.SimpLogging      : clientInboundChannel removed WebSocketAnnotationMethodMessageHandler[prefixes=[/app/]]
+2025-03-12 23:07:47.613  INFO 4080 --- [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopping...
+2025-03-12 23:07:47.613  INFO 4080 --- [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@11c3ff67]]
+2025-03-12 23:07:47.613 DEBUG 4080 --- [SpringApplicationShutdownHook] org.springframework.web.SimpLogging      : clientInboundChannel removed SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@11c3ff67]
+2025-03-12 23:07:47.613 DEBUG 4080 --- [SpringApplicationShutdownHook] org.springframework.web.SimpLogging      : brokerChannel removed SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@11c3ff67]
+2025-03-12 23:07:47.614  INFO 4080 --- [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopped.
+2025-03-12 23:07:47.614 DEBUG 4080 --- [SpringApplicationShutdownHook] org.springframework.web.SimpLogging      : clientInboundChannel removed UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2025-03-12 23:07:47.614 DEBUG 4080 --- [SpringApplicationShutdownHook] org.springframework.web.SimpLogging      : brokerChannel removed UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2025-03-12 23:07:50.202  INFO 21608 --- [main] com.websocket.chat.ChatApplication       : Starting ChatApplication using Java 23.0.1 on DESKTOP-IUIAJO3 with PID 21608 (D:\JavaWebSocketReact-master\JavaWebSocketReact-master\java-server\target\classes started by sktkt in D:\JavaWebSocketReact-master\JavaWebSocketReact-master\java-server)
+2025-03-12 23:07:50.205  INFO 21608 --- [main] com.websocket.chat.ChatApplication       : No active profile set, falling back to default profiles: default
+2025-03-12 23:07:50.998  INFO 21608 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2025-03-12 23:07:51.009  INFO 21608 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-12 23:07:51.009  INFO 21608 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2025-03-12 23:07:51.078  INFO 21608 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-12 23:07:51.078  INFO 21608 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 827 ms
+2025-03-12 23:07:51.198 DEBUG 21608 --- [main] o.s.w.s.s.s.WebSocketHandlerMapping      : Patterns [/ws/**] in 'stompWebSocketHandlerMapping'
+2025-03-12 23:07:51.269 DEBUG 21608 --- [main] .WebSocketAnnotationMethodMessageHandler : 
+	c.w.c.c.ChatController:
+	{[MESSAGE],[/chat]}: sendMessage(ChatMessage)
+2025-03-12 23:07:51.275 DEBUG 21608 --- [main] .WebSocketAnnotationMethodMessageHandler : 
+	o.s.b.a.w.s.e.BasicErrorController:
+	
+2025-03-12 23:07:51.330 DEBUG 21608 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-03-12 23:07:51.378 DEBUG 21608 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 mappings in 'requestMappingHandlerMapping'
+2025-03-12 23:07:51.400 DEBUG 21608 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-03-12 23:07:51.408 DEBUG 21608 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-03-12 23:07:51.471  INFO 21608 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2025-03-12 23:07:51.473 DEBUG 21608 --- [main] org.springframework.web.SimpLogging      : clientOutboundChannel added SubProtocolWebSocketHandler[StompSubProtocolHandler[v10.stomp, v11.stomp, v12.stomp]]
+2025-03-12 23:07:51.473 DEBUG 21608 --- [main] org.springframework.web.SimpLogging      : clientInboundChannel added WebSocketAnnotationMethodMessageHandler[prefixes=[/app/]]
+2025-03-12 23:07:51.473  INFO 21608 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2025-03-12 23:07:51.473 DEBUG 21608 --- [main] org.springframework.web.SimpLogging      : clientInboundChannel added SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@7ff8a9dc]
+2025-03-12 23:07:51.473 DEBUG 21608 --- [main] org.springframework.web.SimpLogging      : brokerChannel added SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@7ff8a9dc]
+2025-03-12 23:07:51.473  INFO 21608 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@7ff8a9dc]]
+2025-03-12 23:07:51.473  INFO 21608 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2025-03-12 23:07:51.473 DEBUG 21608 --- [main] org.springframework.web.SimpLogging      : clientInboundChannel added UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2025-03-12 23:07:51.473 DEBUG 21608 --- [main] org.springframework.web.SimpLogging      : brokerChannel added UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2025-03-12 23:07:51.480  INFO 21608 --- [main] com.websocket.chat.ChatApplication       : Started ChatApplication in 1.605 seconds (JVM running for 1.939)
+2025-03-12 23:08:01.275  INFO 21608 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-12 23:08:01.276  INFO 21608 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-12 23:08:01.276 DEBUG 21608 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-03-12 23:08:01.276 DEBUG 21608 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-03-12 23:08:01.276 DEBUG 21608 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-03-12 23:08:01.277 DEBUG 21608 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2a0c97f1
+2025-03-12 23:08:01.278 DEBUG 21608 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@3c39797b
+2025-03-12 23:08:01.278 DEBUG 21608 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-03-12 23:08:01.279  INFO 21608 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-03-12 23:08:01.293 DEBUG 21608 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/ws/info?t=1741795681201", parameters={masked}
+2025-03-12 23:08:01.304 DEBUG 21608 --- [http-nio-8080-exec-1] o.s.w.s.s.s.WebSocketHandlerMapping      : Mapped to org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler@46c3a14d
+2025-03-12 23:08:01.324 DEBUG 21608 --- [http-nio-8080-exec-1] o.s.w.s.s.t.h.DefaultSockJsService       : Processing transport request: GET http://localhost:8080/ws/info?t=1741795681201
+2025-03-12 23:08:01.332 DEBUG 21608 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-12 23:08:01.457 DEBUG 21608 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/ws/257/trusrltx/websocket", parameters={}
+2025-03-12 23:08:01.458 DEBUG 21608 --- [http-nio-8080-exec-2] o.s.w.s.s.s.WebSocketHandlerMapping      : Mapped to org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler@46c3a14d
+2025-03-12 23:08:01.460 DEBUG 21608 --- [http-nio-8080-exec-2] o.s.w.s.s.t.h.DefaultSockJsService       : Processing transport request: GET http://localhost:8080/ws/257/trusrltx/websocket
+2025-03-12 23:08:01.487 DEBUG 21608 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 101 SWITCHING_PROTOCOLS
+2025-03-12 23:08:01.503 DEBUG 21608 --- [http-nio-8080-exec-2] s.w.s.h.LoggingWebSocketHandlerDecorator : New WebSocketServerSockJsSession[id=trusrltx]
+2025-03-12 23:08:01.661 DEBUG 21608 --- [clientInboundChannel-2] org.springframework.web.SimpLogging      : Processing CONNECT session=trusrltx
+2025-03-12 23:08:01.665 DEBUG 21608 --- [clientInboundChannel-5] org.springframework.web.SimpLogging      : Processing SUBSCRIBE /topic/messages id=sub-0 session=trusrltx
+2025-03-12 23:08:51.233  INFO 21608 --- [MessageBroker-10] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[1 current WS(1)-HttpStream(0)-HttpPoll(0), 1 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(1)-CONNECTED(1)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 6, active threads = 0, queued tasks = 0, completed tasks = 6], outboundChannel[pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 1], sockJsScheduler[pool size = 12, active threads = 1, queued tasks = 2, completed tasks = 11]
+2025-03-12 23:30:14.556 DEBUG 21608 --- [SpringApplicationShutdownHook] org.springframework.web.SimpLogging      : clientOutboundChannel removed SubProtocolWebSocketHandler[StompSubProtocolHandler[v10.stomp, v11.stomp, v12.stomp]]
+2025-03-12 23:30:14.556 DEBUG 21608 --- [SpringApplicationShutdownHook] s.w.s.s.t.s.WebSocketServerSockJsSession : Closing SockJS session trusrltx with CloseStatus[code=1001, reason=null]
+2025-03-12 23:30:14.556 DEBUG 21608 --- [SpringApplicationShutdownHook] o.s.w.s.adapter.NativeWebSocketSession   : Closing StandardWebSocketSession[id=78d3f9b5-5bc1-c23b-145b-282f97d5b828, uri=ws://localhost:8080/ws/257/trusrltx/websocket]
+2025-03-12 23:30:14.557 DEBUG 21608 --- [SpringApplicationShutdownHook] s.w.s.h.LoggingWebSocketHandlerDecorator : WebSocketServerSockJsSession[id=trusrltx] closed with CloseStatus[code=1001, reason=null]
+2025-03-12 23:30:14.557 DEBUG 21608 --- [SpringApplicationShutdownHook] o.s.w.s.m.SubProtocolWebSocketHandler    : Clearing session trusrltx
+2025-03-12 23:30:14.558 DEBUG 21608 --- [clientInboundChannel-8] org.springframework.web.SimpLogging      : Processing DISCONNECT session=trusrltx
+2025-03-12 23:30:14.558 DEBUG 21608 --- [SpringApplicationShutdownHook] org.springframework.web.SimpLogging      : clientInboundChannel removed WebSocketAnnotationMethodMessageHandler[prefixes=[/app/]]
+2025-03-12 23:30:14.558  INFO 21608 --- [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopping...
+2025-03-12 23:30:14.558  INFO 21608 --- [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@7ff8a9dc]]
+2025-03-12 23:30:14.558 DEBUG 21608 --- [SpringApplicationShutdownHook] org.springframework.web.SimpLogging      : clientInboundChannel removed SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@7ff8a9dc]
+2025-03-12 23:30:14.558 DEBUG 21608 --- [SpringApplicationShutdownHook] org.springframework.web.SimpLogging      : brokerChannel removed SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@7ff8a9dc]
+2025-03-12 23:30:14.558  INFO 21608 --- [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopped.
+2025-03-12 23:30:14.558 DEBUG 21608 --- [SpringApplicationShutdownHook] org.springframework.web.SimpLogging      : clientInboundChannel removed UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2025-03-12 23:30:14.558 DEBUG 21608 --- [SpringApplicationShutdownHook] org.springframework.web.SimpLogging      : brokerChannel removed UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
