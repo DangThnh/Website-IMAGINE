@@ -1,0 +1,89 @@
+.inner-wrap {
+    display: flex;
+    flex-direction: row;
+}
+.container {
+    max-width: 1000px; /* Tăng chiều rộng tổng thể */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+img {
+    max-width: 500px; /* Tăng kích thước tối đa của ảnh */
+    width: auto; /* Đảm bảo ảnh chiếm hết không gian có sẵn */
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.05); /* Hiệu ứng phóng to nhẹ khi hover */
+}
+
+.inner-wrap {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1741CA;
+    margin-top: 0;
+    text-transform: capitalize;
+}
+
+p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+p strong {
+    color: #333;
+}
+
+.btn-warning {
+    background-color: #f0ad4e;
+    border-color: #eea236;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-warning:hover {
+    background-color: #ec971f;
+    border-color: #d58512;
+}
+
+.mt-3 {
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .btn-warning {
+        padding: 8px 15px;
+    }
+}

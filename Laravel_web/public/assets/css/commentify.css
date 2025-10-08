@@ -1,0 +1,10 @@
+.comment-section {
+    /* Các kiểu dáng riêng cho comment section */
+    padding: 20px;
+    background-color: #f9f9f9; /* Ví dụ về màu nền */
+    border: 1px solid #ddd; /* Ví dụ về đường viền */
+}
+
+.comment-section .comment {
+    /* Các kiểu dáng riêng cho bình luận */
+}

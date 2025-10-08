@@ -1,0 +1,22 @@
+.search-form {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 30px;
+    left:20px; /* Đẩy tất cả các phần tử khác sang bên phải */
+    color: rgb(231, 231, 231);
+}
+
+.search-form input[type="text"],
+.search-form select {
+    padding: 8px 12px;
+    font-size: 16px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    margin-right: 10px; /* Khoảng cách giữa các phần tử */
+}
+
+.title-container {
+    flex-grow: 1; /* Để tiêu đề chiếm không gian còn lại */
+}

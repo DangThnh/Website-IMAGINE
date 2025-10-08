@@ -1,0 +1,15 @@
+.collection-button {
+    display: inline-block;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #0056b3;
+    color: white;
+    text-decoration: none; 
+    border-radius: 5px; 
+}
+.collection-button:hover {
+    background-color: #8565a3;
+}

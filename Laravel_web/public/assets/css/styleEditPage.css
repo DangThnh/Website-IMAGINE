@@ -1,0 +1,80 @@
+
+
+        body {
+            margin: 0;
+            background-color: #f8f9fa; /* Màu nền nhẹ cho trang */
+            font-family: 'Asap SemiExpanded Black', sans-serif; /* Font mặc định cho nội dung */
+            display: flex;
+            flex-direction: column; /* Đặt hướng dọc */
+            align-items: center; /* Căn giữa theo chiều ngang */
+            justify-content: flex-start; /* Căn đầu trang */
+            height: 100vh; /* Chiều cao 100% viewport */
+        }
+
+        /* Hình chữ nhật màu xanh dương ở đầu trang */
+        .header {
+            background-color: #1741ca; /* Màu xanh dương */
+            width: 100%;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Tiêu đề Imagine */
+        .header h1 {
+            margin: 0;
+            font-family: 'STORA', sans-serif;
+            font-size: 80px;
+            color: white;
+            text-align: center;
+        }
+
+        /* Slogan */
+        .header h2 {
+            margin: 0;
+            font-family: 'Asap SemiExpanded Black', sans-serif;
+            font-size: 22px;
+            color: white;
+            text-align: center;
+        }
+
+        form {
+            background-color: white;
+            padding: 20px; /* Khoảng cách bên trong */
+            border-radius: 10px; /* Bo góc cho form */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Đổ bóng cho form */
+            width: 300px; /* Chiều rộng cố định cho form */
+            margin-top: 20px; /* Khoảng cách giữa header và form */
+        }
+
+        label {
+            margin-top: 10px; /* Khoảng cách giữa các label */
+            margin-bottom: 5px; /* Khoảng cách giữa label và input */
+            display: block; /* Đảm bảo label nằm trên cùng input */
+        }
+
+        input[type="file"],
+        input[type="text"],
+        textarea {
+            width: 100%; /* Chiếm toàn bộ chiều rộng form */
+            padding: 8px; /* Khoảng cách bên trong input */
+            margin-bottom: 15px; /* Khoảng cách dưới mỗi input */
+            border: 1px solid #ced4da; /* Viền cho input */
+            border-radius: 5px; /* Bo góc cho input */
+        }
+
+        button {
+            background-color: #1741ca; /* Màu nền nút */
+            color: white; /* Màu chữ nút */
+            border: none; /* Không viền */
+            padding: 10px; /* Khoảng cách bên trong nút */
+            border-radius: 5px; /* Bo góc cho nút */
+            cursor: pointer; /* Con trỏ chuột khi hover */
+            width: 100%; /* Chiếm toàn bộ chiều rộng */
+        }
+
+        button:hover {
+            background-color: #0f2e7b; /* Màu nền nút khi hover */
+        }

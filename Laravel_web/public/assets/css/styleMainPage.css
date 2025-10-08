@@ -1,0 +1,273 @@
+
+        /* Thêm các style cụ thể nếu cần */
+        body {
+            margin: 0;
+            background-color: white;
+            font-family: 'Asap SemiExpanded Black', sans-serif; /* Font mặc định cho nội dung */
+        }
+
+        .font {
+            font-family: 'Asap SemiExpanded Black', sans-serif;
+        }
+
+        /* Hình chữ nhật màu xanh dương ở đầu trang */
+        .header {
+            background-color: #1741ca; /* Màu xanh dương */
+            width: 100%;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            text-align: center;
+
+        }
+
+            .upload-button {
+                position: absolute; /* Để định vị nút ở góc */
+                top: 60px; /* Khoảng cách từ trên xuống */
+                right: 10px; /* Khoảng cách từ bên phải */
+                background-color: #28a745; /* Màu nền nút */
+                color: white; /* Màu chữ */
+                padding: 10px 15px; /* Khoảng cách bên trong nút */
+                border: none; /* Không viền */
+                border-radius: 5px; /* Bo góc cho nút */
+                text-decoration: none; /* Không gạch chân */
+                cursor: pointer; /* Con trỏ chuột khi hover */
+            }
+
+            .upload-button:hover {
+                background-color: #218838; /* Màu nền khi hover */
+            }
+
+        /* Tiêu đề Imagine */
+        .header h1 {
+            margin: 0;
+            font-family: 'STORA', sans-serif;
+            font-size: 80px;
+            color: white;
+            text-align: center;
+        }
+
+        /* Slogan */
+        .header h2 {
+            margin: 0;
+            font-family: 'Asap SemiExpanded Black', sans-serif;
+            font-size: 22px;
+            color: white;
+            text-align: center;
+        }
+
+        /* Phần hiển thị các box hình vuông */
+        .box-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        /* Các box hình vuông */
+        .box {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            border: 4px solid #1741ca;
+            box-sizing: border-box;
+            margin: 3px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden; /* Ẩn phần ảnh vượt ra ngoài box */
+            border-radius: 15px;
+        }
+        .overlay {
+            position: absolute; /* Định vị tuyệt đối để phủ lên box */
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5); /* Lớp màu đen với độ trong suốt */
+            opacity: 0; /* Bắt đầu với độ trong suốt 0 */
+            transition: opacity 0.3s ease; /* Hiệu ứng chuyển tiếp */
+            border-radius: 15px; /* Bo góc cho overlay */
+        }
+
+        .box:hover .overlay {
+            opacity: 1; /* Hiển thị lớp khi hover */
+        }
+            .image-container {
+
+                margin: flex;
+                text-align: center;
+            }
+            img {
+                max-width:  300px;
+                max-height: 300px;
+                object-fit: cover;
+                cursor: pointer; /* Thêm con trỏ chuột */
+            }
+            /* Style cho modal */
+            .modal {
+                display: none; /* Ẩn modal mặc định */
+                position: fixed;
+                z-index: 1000;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+                background-color: rgb(0,0,0);
+                background-color: rgba(0,0,0,0.4);
+                padding-top: 60px;
+            }
+            .modal-content {
+                background-color: rgba(255, 255, 255, 0.9);
+                margin: 5% auto;
+                padding: 20px;
+                border: 1px solid #888;
+                width: 80%;
+                max-width: 500px;
+                text-align: center;
+                border-radius: 15px;
+            }
+            .close {
+                color: #aaa;
+                float: right;
+                font-size: 28px;
+                font-weight: bold;
+            }
+            .close:hover,
+            .close:focus {
+                color: black;
+                text-decoration: none;
+                cursor: pointer;
+            }
+            .img-zoom {
+            transition: transform 0.2s; /* Hiệu ứng chuyển tiếp */
+                }
+
+             .img-zoom:hover {
+             transform: scale(2); /* Zoom lên 200%*/
+            }
+            .inside_button {
+
+                top: 20px; /* Khoảng cách từ trên xuống */
+                right: 20px; /* Khoảng cách từ bên phải */
+                background-color: #1926da; /* Màu nền nút */
+                color: white; /* Màu chữ */
+                padding: 10px 15px; /* Khoảng cách bên trong nút */
+                border: none; /* Không viền */
+                border-radius: 5px; /* Bo góc cho nút */
+                text-decoration: none; /* Không gạch chân */
+                cursor: pointer; /* Con trỏ chuột khi hover */
+            }
+
+
+            .user-button {
+                position: fixed;
+                top: 20px; /* Khoảng cách từ trên */
+                right: 20px; /* Khoảng cách từ bên phải */
+                background-color: #54c054; /* Màu nền */
+                border: none;
+                border-radius: 50%; /* Làm cho nút hình tròn */
+                width: 50px; /* Chiều rộng */
+                height: 50px; /* Chiều cao */
+                display: flex; /* Để căn giữa */
+                align-items: center; /* Căn giữa theo chiều dọc */
+                justify-content: center; /* Căn giữa theo chiều ngang */
+                cursor: pointer;
+                z-index: 1000; /* Để đảm bảo nút nằm trên các phần tử khác */
+            }
+
+            .chat-button {
+                position: fixed;
+                top: 80px; /* Khoảng cách từ trên */
+                right: 20px; /* Khoảng cách từ bên phải */
+                background-color: #54c054; /* Màu nền */
+                border: none;
+                border-radius: 50%; /* Làm cho nút hình tròn */
+                width: 50px; /* Chiều rộng */
+                height: 50px; /* Chiều cao */
+                display: flex; /* Để căn giữa */
+                align-items: center; /* Căn giữa theo chiều dọc */
+                justify-content: center; /* Căn giữa theo chiều ngang */
+                cursor: pointer;
+                z-index: 1000; /* Để đảm bảo nút nằm trên các phần tử khác */
+            }
+
+            .chat-button img {
+                width: 30px;
+            }
+
+            .user-button img {
+                width: 30px; /* Đặt kích thước cho biểu tượng */
+            }
+
+            .modal2 {
+                display: none; /* Ẩn modal mặc định */
+                position: fixed;
+                z-index: 1000; /* Để đảm bảo modal nằm trên các phần tử khác */
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.5); /* Màu nền mờ */
+            }
+
+            .modal-content2 {
+                background-color: white;
+                margin: 15% auto; /* Đặt modal vào giữa màn hình */
+                padding: 20px;
+                border-radius: 5px;
+                width: 300px; /* Chiều rộng của modal */
+                display: flex; /* Sử dụng flexbox */
+                flex-direction: column; /* Sắp xếp theo chiều dọc */
+                align-items: center; /* Căn giữa theo chiều ngang */
+                text-align: center; /* Căn giữa chữ */
+            }
+
+            .close-button2 {
+                color: black;
+                float: right;
+                font-size: 28px;
+                font-weight: bold;
+                cursor: pointer;
+            }
+
+            .modal-button2 {
+                display: block; /* Để các nút nằm theo chiều dọc */
+                margin: 10px 0; /* Khoảng cách giữa các nút */
+                text-decoration: none; /* Bỏ gạch chân */
+                color: white; /* Màu chữ */
+                background-color: #007bff; /* Màu nền cho nút */
+                padding: 10px;
+                width: 200px; /* Chiều rộng của nút */
+                border-radius: 5px; /* Bo tròn góc */
+                text-align: center; /* Căn giữa chữ trong nút */
+            }
+
+            .comments-section {
+                border-top: 1px solid #ccc;
+                margin-top: 20px;
+                padding-top: 10px;
+            }
+
+            #comments-list {
+                margin-bottom: 10px;
+            }
+
+            .comments-section textarea {
+                width: 100%;
+                height: 60px;
+                margin-bottom: 10px;
+            }
+
+            .comments-section button {
+                background-color: #4CAF50;
+                color: white;
+                padding: 10px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }

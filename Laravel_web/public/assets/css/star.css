@@ -1,0 +1,54 @@
+/* styleMainPage.css */
+
+.star {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: white; /* Màu trắng */
+    clip-path: polygon(
+        50% 33%,    /* Đỉnh trên */
+        99% 10%,  /* Đỉnh phải */
+        70% 50%,   /* Đỉnh phải dưới */
+        89% 82%,   /* Đỉnh dưới phải */
+        50% 67%,   /* Đỉnh dưới */
+        0% 90%,   /* Đỉnh dưới trái */
+        30% 50%,   /* Đỉnh trái dưới */
+        10% 17%    /* Đỉnh trái */); /* Hình thoi */
+    animation: star-fly 1.6s linear infinite;
+    opacity: 0;
+}
+
+@keyframes star-fly {
+    0% {
+        transform: translateY(1300%) translateX(-500% ); /* Bắt đầu xa hơn */
+        opacity: 0;
+    }
+    5% {
+        transform: translateY(1200%) translateX(-400%); /* Bắt đầu xa hơn */
+        opacity: 1;
+    }
+
+    35% {
+        transform: translateY(500%) translateX(300%); /* Kết thúc xa hơn */
+        opacity: 1;
+    }
+
+    35% {
+        transform: translateY(400%) translateX(400%); /* Kết thúc xa hơn */
+        opacity: 1;
+    }
+    70% {
+        transform: translateY(400%) translateX(400%); /* Kết thúc xa hơn */
+        opacity: 1;
+    }
+
+    70% {
+        transform: translateY(300%) translateX(500%); /* Kết thúc xa hơn */
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-1100%) translateX(1700%); /* Kết thúc xa hơn */
+        opacity: 0;
+    }
+}
